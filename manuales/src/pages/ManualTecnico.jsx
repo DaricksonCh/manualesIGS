@@ -124,16 +124,44 @@ const ManualTecnico = () => {
           HERRAMIENTAS UTILIZADAS PARA LA INSTALACION Y EJECUCION DEL APLICATIVO
         </h2>
         <p>
-          <span> Node.js</span> : Es un entorno controlado por eventos diseñado para crear aplicaciones escalables, permitiéndote establecer y gestionar múltiples conexiones al mismo tiempo. Gracias a esta característica, no tienes que preocuparte con el bloqueo de procesos, pues no hay bloqueos.
+          <span> Node.js</span> : Es un entorno controlado por eventos diseñado
+          para crear aplicaciones escalables, permitiéndote establecer y
+          gestionar múltiples conexiones al mismo tiempo. Gracias a esta
+          característica, no tienes que preocuparte con el bloqueo de procesos,
+          pues no hay bloqueos.
         </p>
         <p>
-          <span>MySQL</span> : Es un sistema de gestión de bases de datos relacional que permite almacenar y acceder a los datos a través de múltiples motores de almacenamiento, incluyendo InnoDB, CSV y NDB. MySQL también es capaz de replicar datos y particionar tablas para mejorar el rendimiento y la durabilidad
+          <span>MySQL</span> : Es un sistema de gestión de bases de datos
+          relacional que permite almacenar y acceder a los datos a través de
+          múltiples motores de almacenamiento, incluyendo InnoDB, CSV y NDB.
+          MySQL también es capaz de replicar datos y particionar tablas para
+          mejorar el rendimiento y la durabilidad
         </p>
         <p>
-          <span>npm</span> : Es el sistema de gestión de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript, bajo Artistic License 2.0.
+          <span>npm</span> : Es el sistema de gestión de paquetes por defecto
+          para Node.js, un entorno de ejecución para JavaScript, bajo Artistic
+          License 2.0.
         </p>
         <p>
-          <span>Apache</span> : Apache, o Apache HTTP Server, es un servidor web de código abierto y gratuito desarrollado y mantenido por la Apache Software Foundation. Es uno de los servidores web más populares y ampliamente utilizados en el mundo. Apache proporciona un entorno seguro y eficiente para la entrega de contenido web, permitiendo a los usuarios publicar sus sitios y aplicaciones de manera efectiva. Ofrece soporte para diversos módulos y extensiones, lo que lo hace altamente configurable y adaptable a diferentes necesidades.
+          <span>Apache</span> : Apache, o Apache HTTP Server, es un servidor web
+          de código abierto y gratuito desarrollado y mantenido por la Apache
+          Software Foundation. Es uno de los servidores web más populares y
+          ampliamente utilizados en el mundo. Apache proporciona un entorno
+          seguro y eficiente para la entrega de contenido web, permitiendo a los
+          usuarios publicar sus sitios y aplicaciones de manera efectiva. Ofrece
+          soporte para diversos módulos y extensiones, lo que lo hace altamente
+          configurable y adaptable a diferentes necesidades.
+        </p>
+      </div>
+      {/* instalar un servedor local */}
+      <div className="">
+        <h2> INSTALACIÓN DEL SERVIDOR LOCAL</h2>
+        <p>La instalación del servidor local constituye el proceso de configurar el entorno donde se ejecutará la aplicación, así como el alojamiento de los archivos asociados. Este servidor local permite compartir la aplicación, brindando la posibilidad a otros usuarios de acceder a ella. En este manual, se aborda la instalación en un entorno Ubuntu Server. Es crucial contar con privilegios de Super Usuario para llevar a cabo la instalación correcta de los paquetes y programas necesarios.</p>
+        <p>
+        Antes de proceder con la instalación de estos programas y paquetes, se recomienda realizar una actualización de los repositorios mediante el comando
+        <span>sudo apt-get update.</span>
+        Además, para asegurar la obtención de las versiones más recientes, se puede ejecutar
+        <span>sudo apt-get upgrade</span>
         </p>
       </div>
     </div>
