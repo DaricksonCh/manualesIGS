@@ -156,12 +156,267 @@ const ManualTecnico = () => {
       {/* instalar un servedor local */}
       <div className="">
         <h2> INSTALACIÓN DEL SERVIDOR LOCAL</h2>
-        <p>La instalación del servidor local constituye el proceso de configurar el entorno donde se ejecutará la aplicación, así como el alojamiento de los archivos asociados. Este servidor local permite compartir la aplicación, brindando la posibilidad a otros usuarios de acceder a ella. En este manual, se aborda la instalación en un entorno Ubuntu Server. Es crucial contar con privilegios de Super Usuario para llevar a cabo la instalación correcta de los paquetes y programas necesarios.</p>
         <p>
-        Antes de proceder con la instalación de estos programas y paquetes, se recomienda realizar una actualización de los repositorios mediante el comando
-        <span>sudo apt-get update.</span>
-        Además, para asegurar la obtención de las versiones más recientes, se puede ejecutar
-        <span>sudo apt-get upgrade</span>
+          La instalación del servidor local constituye el proceso de configurar
+          el entorno donde se ejecutará la aplicación, así como el alojamiento
+          de los archivos asociados. Este servidor local permite compartir la
+          aplicación, brindando la posibilidad a otros usuarios de acceder a
+          ella. En este manual, se aborda la instalación en un entorno Ubuntu
+          Server. Es crucial contar con privilegios de Super Usuario para llevar
+          a cabo la instalación correcta de los paquetes y programas necesarios.
+        </p>
+        <p>
+          Antes de proceder con la instalación de estos programas y paquetes, se
+          recomienda realizar una actualización de los repositorios mediante el
+          comando
+          <span>sudo apt-get update.</span>
+          Además, para asegurar la obtención de las versiones más recientes, se
+          puede ejecutar
+          <span>sudo apt-get upgrade</span>
+        </p>
+      </div>
+      <div className="">
+        <h2>INSTALACION DE Node.JS</h2>
+        <p>
+          Para instalar NodeJS en Ubuntu Server se debe estar iniciado como
+          super usuario o usuario root. Ejecutando la siguiente entrada en la
+          consola sudo apt-get install nodejs y luego empezara la descarga de
+          paquetes. Y deberá esperar hasta que finalice la instalación
+        </p>
+        {/* aqui una img */}
+        <p>
+          Ahora puede comprobar que la instalación haya resultado con éxito
+          ejecutando la siguiente entrada node -v y si todo ha salido bien debe
+          mostrar la siguiente salida. Se puede ver que en este caso está
+          instalada la versión 12.22.9 de NodeJS.
+        </p>
+        {/* aqui una imagen */}
+      </div>
+      <div className="">
+        <h2> INSTALACION DE npm (Node Package Manager)</h2>
+        <p>
+          Para instalar npm en Ubuntu Server se debe estar iniciado como super
+          usuario o usuario root. Ejecutando la siguiente entrada en la consola
+          sudo apt-get install npm. Y deberá esperar hasta que finalice la
+          instalación.
+        </p>
+        {/* uma img aqui */}
+        <p>
+          Ahora puede comprobar que la instalación haya resultado con éxito
+          ejecutando la siguiente entrada npm -v y si todo ha salido bien debe
+          mostrar la siguiente salida. Se puede ver que en este caso está
+          instalada la versión 8.5.1 de npm.
+        </p>
+      </div>
+      <div className="">
+        <h2> INSTALACION DE MySQL</h2>
+        <p>
+          Para instalar MySQL en Ubuntu Server se debe estar iniciado como super
+          usuario o usuario root. Ejecutando la siguiente entrada en la consola
+          sudo apt-get install mysql-server. Y deberá esperar hasta que finalice
+          la descarga.
+        </p>
+        {/* aqui una img */}
+        <p>
+          Una vez finalice la descarga se debe proceder a instalar el paquete ya
+          que MySQL necesita de unas configuraciones adicionales. Para iniciar
+          la configuración se ejecuta la siguiente entrada sudo
+          mysql_secure_installation
+        </p>
+        {/* aqui una img */}
+        <p>
+          Para comprobar la instalación del programa se ejecuta la siguiente
+          entrada mysql -u root y si todo ha salido bien deberá mostrar la
+          siguiente salida. Lo cual sería en entorno principal de MySQL en
+          Linux.
+        </p>
+        {/* aqui una img */}
+      </div>
+      <div className="">
+        {" "}
+        INSTALACION DE PM2
+        <p>
+          Para instalar pm2 en Ubuntu Server se debe estar iniciado como super
+          usuario o usuario root. Ejecutando la siguiente entrada en la consola
+          sudo npm install pm2@latest -g. Y deberá esperar hasta que finalice la
+          descarga
+        </p>
+        {/* img aqui */}
+        <p>
+          Para comprobar la instalación del programa se ejecuta la siguiente
+          entrada pm2 -v y si todo ha salido bien deberá mostrar la siguiente
+          salida. Lo cual sería en entorno principal de pm2 en Linux
+        </p>
+        {/* img */}
+      </div>
+      <div className="">
+        <h2> INSTALACION DE APACHE</h2>
+        <p>
+          Para instalar pm2 en Ubuntu Server se debe estar iniciado como super
+          usuario o usuario root. Ejecutando la siguiente entrada en la consola
+          sudo apt install apache2. Y deberá esperar hasta que finalice la
+          descarga.
+        </p>
+        {/* img */}
+        <p>
+          Una vez descargado e instalado se debe proceder a iniciar el servicio
+          con la siguiente entrada sudo service apache2 start. Si todo ha salido
+          bien al iniciar el servicio se ejecuta sudo service apache2 status y
+          mostrará el estado de apache.
+        </p>
+        {/* img */}
+      </div>
+      <div className="">
+        <h2>INSTALACION DE PHP</h2>
+        <p>
+          Para instalar PHP en Ubuntu Server se debe estar iniciado como super
+          usuario o usuario root. Ejecutando la siguiente entrada en la consola
+          sudo apt-get install php8.1 y se instalará la versión 8.1 en este
+          caso. Y deberá esperar hasta que finalice la descarga.
+        </p>
+        {/* img */}
+      </div>
+      <div className="">
+        <h2>PROTOCOLO SSH</h2>
+        <p>
+          Es la solución para garantizar conexiones remotas seguras. SSH es un
+          protocolo de comunicación que encripta los datos que se intercambian,
+          y es virtualmente imposible romper la privacidad de la comunicación.
+          El acrónimo ssh viene del inglés: Secure SHell. El protocolo ssh es
+          muy versátil, tiene un software cliente que posibilita el acceso a la
+          línea de comandos, permite la transferencia de archivos y la creación
+          de túneles seguros con soporte de comunicación para otros protocolos
+        </p>
+      </div>
+      <div className="">
+        <h2>Clientes SSH</h2>
+        <p>Los clientes ssh se dividen en dos grupos:</p>
+        <p>
+          Terminal SSH Es un emulador de terminal que permite acceder de forma
+          remota desde un equipo a la línea de comandos del equipo remoto,
+          utilizando el protocolo SSH. Cliente SFTP Se trata de un cliente para
+          transferencia de archivos que utiliza el Protocolo de Transferencia
+          Segura de Archivos. Sus siglas significan en inglés (Secure File
+          Transfer Protocol (SFTP))
+        </p>
+      </div>
+      <div className="">
+        <h2>Clientes Linux</h2>
+        <p>
+          <span>openssh-client</span> : este software ofrece utilidades para
+          acceso remoto (cliente ssh), copia de seguridad de archivos (scp) y
+          transferencia segura de archivos (sftp), entre otras.
+        </p>
+        <p>
+          <span>FileZilla</span> : Cliente SFTP.{" "}
+        </p>
+        <h2>Clientes Windows</h2>
+        <p>
+          <span>PuTTY</span> : Terminal SSH.
+        </p>
+        <p>
+          <span>FileZilla</span> : Cliente SFTP
+        </p>
+      </div>
+      <div className="">
+        <h2>INSTALACIÓN</h2>
+        <p>root@server:~# apt install openssh-server openssh-client</p>
+        <p>
+          Una vez se haya instalado se activa el servicio con el siguiente
+          comando.
+          <span>sudo systemctl enable - -now ssh</span>
+        </p>
+        <p>
+          Para comprobar de que esté activo se ejecuta el siguiente comando.
+          <span>sudo systemctl status ssh</span>
+        </p>
+        <p>
+          Ahora se debe verificar que el servidor sea accesible, se puede hacer
+          un ping con la dirección ip del servidor desde el equipo cliente, que
+          en este caso será un equipo con Windows. Se debe ir a la consola de
+          Windows y ejecutar:
+        </p>
+        {/* img */}
+        <p>
+          Si todo va bien se puede proceder a ingresar al servidor por medio del
+          cliente FileZilla. Donde se deberá ingresar la IP del servidor, el
+          nombre de usuario del servidor, la contraseña de acceso al mismo y el
+          puerto del servidor.
+        </p>
+        {/* img */}
+        <p>
+          Una vez el servidor esté configurado ya se puede transferir la
+          aplicación al servidor. Para ello se usará el cliente FileZilla.
+        </p>
+        <p>
+          {" "}
+          - Primero se busca la aplicación en el equipo cliente desde FileZilla
+          y se copea.
+        </p>
+        {/* img */}
+        <p>
+          {" "}
+          Se pega en la carpeta remota del servidor en la ruta que en este
+          ejemplo es:{" "}
+        </p>
+        <span> {/* aqui la ruta de la carpeta */} </span>
+        {/* img */}
+        <p>
+          {" "}
+          - Se debe hacer lo mismo con la base de datos para luego importarla en
+          MySQL.
+        </p>
+        {/* img */}
+      </div>
+      <div className="">
+        <p>
+          Una vez el archivo .sql este en el servidor se procede a importar
+          desde la consola ingresando a MySQL con el comando en este caso será:
+          <span>mysql -u root {/* reemplazar de ser necesario */}</span>
+        </p>
+        <p> - Se crea la base de datos.</p>
+        {/* img */}
+        <p> - Se selecciona la base de datos.</p>
+        {/* img */}
+        <p> - Se ubica el archivo .sql y se importa con el comando source:</p>
+        {/* img */}
+        <p>
+          {" "}
+          - Una vez se haya ejecutado el comando empezará a importar la base de
+          datos con su información.
+        </p>
+        {/* img */}
+        <p>
+          Una vez terminada la operación ya se podrá visualizar la base de
+          datos.
+        </p>
+        {/* img */}
+      </div>
+      <div className="">
+        <h2>DESPLEGAR LA APLICACIÓN CON PM2</h2>
+        <p>
+          Para desplegar la aplicación se usará el gestor de procesos PM2. Lo
+          primero será situarse dentro del directorio de la aplicación y ubicar
+          el archivo principal que lo mas común es que se llame index.js o
+          app.js
+        </p>
+        <p>
+          En este caso el directorio de la aplicación está en la ruta:
+          <span>/home/david/IGS/</span>
+        </p>
+        {/* img */}
+        <p>
+          Ahora para desplegar se usa el comando <span>pm2 start</span> así:
+        </p>
+        {/* img */}
+        <p> - Una vez desplegada la app aparecerá así:</p>
+        {/* img */}
+        <p>
+          {" "}
+          - Para acceder a la aplicación desplegada en la red se debe poner la
+          dirección ip del servidor mas el puerto de la aplicación en este
+          ejemplo sería así:
+          <span>http://192.168.0.34:5000</span>
         </p>
       </div>
     </div>
