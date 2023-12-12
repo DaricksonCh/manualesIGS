@@ -2,10 +2,11 @@ import React from "react";
 
 const ManualTecnico = () => {
   return (
-    <div>
-      <div id="objetivoGeneral">
-        <h1>Objetivo general:</h1>
-        <p>
+  <div className="bg-gray-100 flex items-center justify-center">
+    <div className="container p-8 w-[60%]">
+      <div id="objetivoGeneral" className="mb-8">
+        <h1 className="text-4xl font-bold mb-4">Objetivo general:</h1>
+        <p className="text-gray-700">
           El objetivo de este manual es brindar información necesaria a los
           administradores que llevarán a cabo el control de la plataforma de los
           programas y herramientas utilizadas para el desarrollo y configuración
@@ -13,60 +14,43 @@ const ManualTecnico = () => {
         </p>
       </div>
 
-      <div id="objetivosEspecificos">
-        <h2>Objetivos específicos</h2>
-        <ol>
-          <li>
-            <p>
-              Identificar y catalogar de manera precisa todos los insumos
-              alimenticios a ser incluidos en el inventario.
-            </p>
+      <div id="objetivosEspecificos" className="mb-8">
+        <h2 className="text-3xl font-bold mb-4">Objetivos específicos</h2>
+        <ol className="list-decimal pl-6">
+          <li className="text-gray-700 mb-2">
+            Identificar y catalogar de manera precisa todos los insumos
+            alimenticios a ser incluidos en el inventario.
           </li>
-
-          <li>
-            <p>
-              Desarrollar un sistema de codificación eficiente para facilitar la
-              identificación y búsqueda rápida de los productos en el
-              inventario.
-            </p>
+          <li className="text-gray-700 mb-2">
+            Desarrollar un sistema de codificación eficiente para facilitar la
+            identificación y búsqueda rápida de los productos en el inventario.
           </li>
-
-          <li>
-            <p>
-              Establecer protocolos y procedimientos para el registro y
-              actualización periódica de los niveles de existencias de los
-              insumos.
-            </p>
+          <li className="text-gray-700 mb-2">
+            Establecer protocolos y procedimientos para el registro y
+            actualización periódica de los niveles de existencias de los
+            insumos.
           </li>
-
-          <li>
-            <p>
-              Capacitar a los usuarios y administradores en el uso adecuado de
-              la plataforma, programas y herramientas relacionadas con el
-              aplicativo de IGS.
-            </p>
+          <li className="text-gray-700 mb-2">
+            Capacitar a los usuarios y administradores en el uso adecuado de la
+            plataforma, programas y herramientas relacionadas con el aplicativo
+            de IGS.
           </li>
-
-          <li>
-            <p>
-              Optimizar la eficiencia del proceso de gestión de inventario
-              mediante la identificación y eliminación de posibles cuellos de
-              botella.
-            </p>
+          <li className="text-gray-700 mb-2">
+            Optimizar la eficiencia del proceso de gestión de inventario
+            mediante la identificación y eliminación de posibles cuellos de
+            botella.
           </li>
-
-          <li>
-            <p>
-              Establecer un sistema de alertas para notificar a los
-              administradores sobre niveles bajos de existencias o productos
-              próximos a caducar.
-            </p>
+          <li className="text-gray-700 mb-2">
+            Establecer un sistema de alertas para notificar a los
+            administradores sobre niveles bajos de existencias o productos
+            próximos a caducar.
           </li>
         </ol>
       </div>
-      <div className="">
-        <h2>Introducción</h2>
-        <p>
+
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold">Introducción</h2>
+        <p className="text-gray-700 leading-9">
           Este manual se realiza con el fin de detallar el sistema en términos
           técnicos, proporcionando los pasos necesarios para realizar la
           correcta instalación del sistema IGS. IGS tiene como objetivo
@@ -75,13 +59,13 @@ const ManualTecnico = () => {
           está recomendado única y exclusivamente para el administrador
           encargado del control y/o instalación del sistema.
         </p>
-        <p>
+        <p className="text-gray-700">
           La configuración de este manual está realizada para el sistema
-          operativo linux - Ubuntu Server.
+          operativo Linux - Ubuntu Server.
         </p>
       </div>
-      <div className="">
-        <h2>Requisitos tecnicos minimos de Hardware</h2>
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold"></h2>
         <ul>
           <li>
             <p> Equipo de cómputo con las siguientes características:</p>
@@ -108,8 +92,8 @@ const ManualTecnico = () => {
           </li>
         </ul>
       </div>
-      <div className="">
-        <h2>REQUISITOS TÉCNICOS MINIMOS DE SOFTWARE</h2>
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold"></h2>
         <p> Privilegios de administrador</p>
         <p>
           {" "}
@@ -118,13 +102,10 @@ const ManualTecnico = () => {
         </p>
         <p>Navegadores de internet: Google Chrome, Opera, Safari.</p>
       </div>
-      <div className="">
-        <h2>
-          {" "}
-          HERRAMIENTAS UTILIZADAS PARA LA INSTALACION Y EJECUCION DEL APLICATIVO
-        </h2>
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold"></h2>
         <p>
-          <span> Node.js</span> : Es un entorno controlado por eventos diseñado
+          <span>Node.js</span> : Es un entorno controlado por eventos diseñado
           para crear aplicaciones escalables, permitiéndote establecer y
           gestionar múltiples conexiones al mismo tiempo. Gracias a esta
           característica, no tienes que preocuparte con el bloqueo de procesos,
@@ -368,58 +349,10 @@ const ManualTecnico = () => {
         </p>
         {/* img */}
       </div>
-      <div className="">
-        <p>
-          Una vez el archivo .sql este en el servidor se procede a importar
-          desde la consola ingresando a MySQL con el comando en este caso será:
-          <span>mysql -u root {/* reemplazar de ser necesario */}</span>
-        </p>
-        <p> - Se crea la base de datos.</p>
-        {/* img */}
-        <p> - Se selecciona la base de datos.</p>
-        {/* img */}
-        <p> - Se ubica el archivo .sql y se importa con el comando source:</p>
-        {/* img */}
-        <p>
-          {" "}
-          - Una vez se haya ejecutado el comando empezará a importar la base de
-          datos con su información.
-        </p>
-        {/* img */}
-        <p>
-          Una vez terminada la operación ya se podrá visualizar la base de
-          datos.
-        </p>
-        {/* img */}
-      </div>
-      <div className="">
-        <h2>DESPLEGAR LA APLICACIÓN CON PM2</h2>
-        <p>
-          Para desplegar la aplicación se usará el gestor de procesos PM2. Lo
-          primero será situarse dentro del directorio de la aplicación y ubicar
-          el archivo principal que lo mas común es que se llame index.js o
-          app.js
-        </p>
-        <p>
-          En este caso el directorio de la aplicación está en la ruta:
-          <span>/home/david/IGS/</span>
-        </p>
-        {/* img */}
-        <p>
-          Ahora para desplegar se usa el comando <span>pm2 start</span> así:
-        </p>
-        {/* img */}
-        <p> - Una vez desplegada la app aparecerá así:</p>
-        {/* img */}
-        <p>
-          {" "}
-          - Para acceder a la aplicación desplegada en la red se debe poner la
-          dirección ip del servidor mas el puerto de la aplicación en este
-          ejemplo sería así:
-          <span>http://192.168.0.34:5000</span>
-        </p>
-      </div>
+
     </div>
+    </div>
+
   );
 };
 
