@@ -2,8 +2,9 @@ import React from "react";
 
 const ManualTecnico = () => {
   return (
-  <div className="bg-gray-100 flex items-center justify-center">
+  <div className="bg-gray-100 flex items-center justify-center text-lg leading-10">
     <div className="container p-8 w-[60%]">
+
       <div id="objetivoGeneral" className="mb-8">
         <h1 className="text-4xl font-bold mb-4">Objetivo general:</h1>
         <p className="text-gray-700">
@@ -64,291 +65,346 @@ const ManualTecnico = () => {
           operativo Linux - Ubuntu Server.
         </p>
       </div>
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold"></h2>
-        <ul>
-          <li>
-            <p> Equipo de cómputo con las siguientes características:</p>
-            <ul>
-              <li>RAM: 4GB</li>
-              <li>ALMACENAMIENTO: Mínimo 120Gb.</li>
-              <li>PROCESADOR: Intel Core Celeron N4020 o superior</li>
+
+      <div className="mb-8 p-4 bg-gray-100 rounded-lg shadow-xl">
+        <h2 className="text-2xl font-bold mb-4">Características de Cómputo</h2>
+        <ul className="list-disc pl-6">
+          <li className="mb-4">
+            <p className="text-lg font-semibold">Equipo de cómputo con las siguientes características:</p>
+            <ul className="list-disc pl-6">
+              <li className="text-gray-700">RAM: <span className="font-semibold">4GB</span></li>
+              <li className="text-gray-700">ALMACENAMIENTO: <span className="font-semibold">Mínimo 120GB</span></li>
+              <li className="text-gray-700">PROCESADOR: <span className="font-semibold">Intel Core Celeron N4020 o superior</span></li>
             </ul>
           </li>
-          <li>
-            <p> Información técnica del servidor implementado.</p>
-            <ul>
-              <li>Procesador - Intel Xeon (R) W- 2145 CPU@</li>
-              <li>Frecuencia - 3.70 GHz</li>
-              <li>RAM instalada 32.0 GB (31,7 GB Usable)</li>
-              <li>
-                Tipo de sistema – Sistema operativo de 64 bits, procesador
-                basado en x64
-              </li>
-              <li>Sistema operativo – Linux Ubuntu Server</li>
-              <li>Versión – 22.04</li>
-              <li>Disco duro – Mecánico 1TB</li>
+          <li className="mb-4">
+            <p className="text-lg font-semibold">Información técnica del servidor implementado.</p>
+            <ul className="list-disc pl-6">
+              <li className="text-gray-700">Procesador - <span className="font-semibold">Intel Xeon (R) W-2145 CPU@</span></li>
+              <li className="text-gray-700">Frecuencia - <span className="font-semibold">3.70 GHz</span></li>
+              <li className="text-gray-700">RAM instalada <span className="font-semibold">32.0 GB (31.7 GB Usable)</span></li>
+              <li className="text-gray-700">Tipo de sistema – <span className="font-semibold">Sistema operativo de 64 bits, procesador basado en x64</span></li>
+              <li className="text-gray-700">Sistema operativo – <span className="font-semibold">Linux Ubuntu Server</span></li>
+              <li className="text-gray-700">Versión – <span className="font-semibold">22.04</span></li>
+              <li className="text-gray-700">Disco duro – <span className="font-semibold">Mecánico 1TB</span></li>
             </ul>
           </li>
         </ul>
+        <h2 className="text-2xl font-bold mb-4">Privilegios de Administrador</h2>
+        <p className="text-lg font-semibold mb-2">Sistema Operativo:</p>
+        <p className="text-gray-700 mb-2">
+          Windows 7/8/8.1/10/11 – Linux – MacOS – IOS - Android.
+        </p>
+        <p className="text-lg font-semibold mb-2">Navegadores de Internet:</p>
+        <p className="text-gray-700 mb-2">Google Chrome, Opera, Safari.</p>
       </div>
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold"></h2>
-        <p> Privilegios de administrador</p>
-        <p>
-          {" "}
-          Sistema Operativo: Windows 7/8/8.1/10/11 – Linux – MacOS – IOS -
-          Android.
-        </p>
-        <p>Navegadores de internet: Google Chrome, Opera, Safari.</p>
+
+      <div className="mb-12 p-4 bg-gray-100 leading-10 text-lg">
+        <div className="flex mb-4 h-64">
+          <div className="flex-grow">
+            <h2 className="text-2xl font-bold">Node.js</h2>
+            <p className="text-gray-700">
+              <span className="font-semibold">Node.js</span>: Es un entorno controlado por eventos diseñado
+              para crear aplicaciones escalables, permitiéndote establecer y gestionar
+              múltiples conexiones al mismo tiempo. Gracias a esta característica, no
+              tienes que preocuparte con el bloqueo de procesos, pues no hay bloqueos.
+            </p>
+          </div>
+          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+        </div>
+
+        <div className="flex mb-4">
+          <div className="flex-grow h-64">
+            <h2 className="text-2xl font-bold">MySQL</h2>
+            <p className="text-gray-700">
+              <span className="font-semibold">MySQL</span>: Es un sistema de gestión de bases de datos
+              relacional que permite almacenar y acceder a los datos a través de múltiples
+              motores de almacenamiento, incluyendo InnoDB, CSV y NDB. MySQL también es
+              capaz de replicar datos y particionar tablas para mejorar el rendimiento y
+              la durabilidad.
+            </p>
+          </div>
+          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+        </div>
+
+        <div className="flex mb-4 h-64">
+          <div className="flex-grow">
+            <h2 className="text-2xl font-bold">NPM</h2>
+            <p className="text-gray-700">
+              <span className="font-semibold">npm</span>: Es el sistema de gestión de paquetes por
+              defecto para Node.js, un entorno de ejecución para JavaScript, bajo Artistic
+              License 2.0.
+            </p>
+          </div>
+          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+        </div>
+
+        <div className="flex">
+          <div className="flex-grow h-64">
+            <h2 className="text-2xl font-bold">Apache</h2>
+            <p className="text-gray-700">
+              <span className="font-semibold">Apache</span>: Apache, o Apache HTTP Server, es un
+              servidor web de código abierto y gratuito desarrollado y mantenido por la
+              Apache Software Foundation. Es uno de los servidores web más populares y
+              ampliamente utilizados en el mundo. Apache proporciona un entorno seguro y
+              eficiente para la entrega de contenido web, permitiendo a los usuarios
+              publicar sus sitios y aplicaciones de manera efectiva. Ofrece soporte para
+              diversos módulos y extensiones, lo que lo hace altamente configurable y
+              adaptable a diferentes necesidades.
+            </p>
+          </div>
+          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+        </div>
       </div>
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold"></h2>
-        <p>
-          <span>Node.js</span> : Es un entorno controlado por eventos diseñado
-          para crear aplicaciones escalables, permitiéndote establecer y
-          gestionar múltiples conexiones al mismo tiempo. Gracias a esta
-          característica, no tienes que preocuparte con el bloqueo de procesos,
-          pues no hay bloqueos.
-        </p>
-        <p>
-          <span>MySQL</span> : Es un sistema de gestión de bases de datos
-          relacional que permite almacenar y acceder a los datos a través de
-          múltiples motores de almacenamiento, incluyendo InnoDB, CSV y NDB.
-          MySQL también es capaz de replicar datos y particionar tablas para
-          mejorar el rendimiento y la durabilidad
-        </p>
-        <p>
-          <span>npm</span> : Es el sistema de gestión de paquetes por defecto
-          para Node.js, un entorno de ejecución para JavaScript, bajo Artistic
-          License 2.0.
-        </p>
-        <p>
-          <span>Apache</span> : Apache, o Apache HTTP Server, es un servidor web
-          de código abierto y gratuito desarrollado y mantenido por la Apache
-          Software Foundation. Es uno de los servidores web más populares y
-          ampliamente utilizados en el mundo. Apache proporciona un entorno
-          seguro y eficiente para la entrega de contenido web, permitiendo a los
-          usuarios publicar sus sitios y aplicaciones de manera efectiva. Ofrece
-          soporte para diversos módulos y extensiones, lo que lo hace altamente
-          configurable y adaptable a diferentes necesidades.
-        </p>
-      </div>
-      {/* instalar un servedor local */}
-      <div className="">
-        <h2> INSTALACIÓN DEL SERVIDOR LOCAL</h2>
-        <p>
-          La instalación del servidor local constituye el proceso de configurar
+
+      <div className="mb-8 p-4 bg-gray-100">
+        <h2 className="text-2xl font-bold mb-4">INSTALACIÓN DEL SERVIDOR LOCAL</h2>
+        <p className="text-gray-700 mb-4">
+          La instalación del <span className="font-bold">servidor local</span> constituye el proceso de configurar
           el entorno donde se ejecutará la aplicación, así como el alojamiento
-          de los archivos asociados. Este servidor local permite compartir la
+          de los archivos asociados. Este <span className="font-bold">servidor local</span> permite compartir la
           aplicación, brindando la posibilidad a otros usuarios de acceder a
-          ella. En este manual, se aborda la instalación en un entorno Ubuntu
-          Server. Es crucial contar con privilegios de Super Usuario para llevar
+          ella. En este manual, se aborda la instalación en un entorno <span className="font-bold">Ubuntu
+          Server</span>. Es crucial contar con privilegios de Super Usuario para llevar
           a cabo la instalación correcta de los paquetes y programas necesarios.
         </p>
-        <p>
+        <p className="text-gray-700 mb-4">
           Antes de proceder con la instalación de estos programas y paquetes, se
           recomienda realizar una actualización de los repositorios mediante el
-          comando
-          <span>sudo apt-get update.</span>
-          Además, para asegurar la obtención de las versiones más recientes, se
-          puede ejecutar
-          <span>sudo apt-get upgrade</span>
+          comando <span className="font-bold">sudo apt-get update.</span> Además, para
+          asegurar la obtención de las versiones más recientes, se
+          puede ejecutar <span className="font-bold">sudo apt-get upgrade</span>.
         </p>
       </div>
-      <div className="">
-        <h2>INSTALACION DE Node.JS</h2>
-        <p>
-          Para instalar NodeJS en Ubuntu Server se debe estar iniciado como
-          super usuario o usuario root. Ejecutando la siguiente entrada en la
-          consola sudo apt-get install nodejs y luego empezara la descarga de
-          paquetes. Y deberá esperar hasta que finalice la instalación
-        </p>
-        {/* aqui una img */}
-        <p>
-          Ahora puede comprobar que la instalación haya resultado con éxito
-          ejecutando la siguiente entrada node -v y si todo ha salido bien debe
-          mostrar la siguiente salida. Se puede ver que en este caso está
-          instalada la versión 12.22.9 de NodeJS.
-        </p>
-        {/* aqui una imagen */}
+
+      <div>
+        <div className="flex mb-8">
+          <div className="w-3/4 pr-8">
+            <h2 className="text-2xl font-bold mb-4">INSTALACIÓN DE MySQL</h2>
+            <p className="text-gray-700 mb-4">
+              Para instalar <span className="font-bold">MySQL</span> en Ubuntu Server se debe estar iniciado como super
+              usuario o usuario root. Ejecutando la siguiente entrada en la consola
+              <span className="font-bold">sudo apt-get install mysql-server</span>. Y deberá esperar hasta que finalice
+              la descarga.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Una vez finalice la descarga se debe proceder a instalar el paquete ya
+              que MySQL necesita de unas configuraciones adicionales. Para iniciar
+              la configuración se ejecuta la siguiente entrada <span className="font-bold">sudo mysql_secure_installation</span>
+            </p>
+            <p className="text-gray-700">
+              Para comprobar la instalación del programa se ejecuta la siguiente
+              entrada <span className="font-bold">mysql -u root</span> y si todo ha salido bien deberá mostrar la
+              siguiente salida. Lo cual sería en el entorno principal de MySQL en
+              Linux.
+            </p>
+          </div>
+          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+        </div>
+
+        <div className="flex mb-8">
+          <div className="w-3/4 pr-8">
+            <h2 className="text-2xl font-bold mb-4">INSTALACIÓN DE PM2</h2>
+            <p className="text-gray-700 mb-4">
+              Para instalar pm2 en Ubuntu Server se debe estar iniciado como super
+              usuario o usuario root. Ejecutando la siguiente entrada en la consola
+              <span className="font-bold">sudo npm install pm2@latest -g</span>. Y deberá esperar hasta que finalice la
+              descarga.
+            </p>
+            <p className="text-gray-700">
+              Para comprobar la instalación del programa se ejecuta la siguiente
+              entrada <span className="font-bold">pm2 -v</span> y si todo ha salido bien deberá mostrar la siguiente
+              salida. Lo cual sería en el entorno principal de pm2 en Linux.
+            </p>
+          </div>
+          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+        </div>
       </div>
-      <div className="">
-        <h2> INSTALACION DE npm (Node Package Manager)</h2>
-        <p>
-          Para instalar npm en Ubuntu Server se debe estar iniciado como super
-          usuario o usuario root. Ejecutando la siguiente entrada en la consola
-          sudo apt-get install npm. Y deberá esperar hasta que finalice la
-          instalación.
-        </p>
-        {/* uma img aqui */}
-        <p>
-          Ahora puede comprobar que la instalación haya resultado con éxito
-          ejecutando la siguiente entrada npm -v y si todo ha salido bien debe
-          mostrar la siguiente salida. Se puede ver que en este caso está
-          instalada la versión 8.5.1 de npm.
-        </p>
+      <div>
+        <div className="flex mb-8">
+          <div className="w-3/4 pr-8">
+            <h2 className="text-2xl font-bold mb-4">INSTALACIÓN DE MySQL</h2>
+            <p className="text-gray-700 mb-4">
+              Para instalar <span className="font-bold">MySQL</span> en Ubuntu Server se debe estar iniciado como super
+              usuario o usuario root. Ejecutando la siguiente entrada en la consola
+              <span className="font-bold">sudo apt-get install mysql-server</span>. Y deberá esperar hasta que finalice
+              la descarga.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Una vez finalice la descarga se debe proceder a instalar el paquete ya
+              que MySQL necesita de unas configuraciones adicionales. Para iniciar
+              la configuración se ejecuta la siguiente entrada <span className="font-bold">sudo mysql_secure_installation</span>
+            </p>
+            <p className="text-gray-700">
+              Para comprobar la instalación del programa se ejecuta la siguiente
+              entrada <span className="font-bold">mysql -u root</span> y si todo ha salido bien deberá mostrar la
+              siguiente salida. Lo cual sería en el entorno principal de MySQL en
+              Linux.
+            </p>
+          </div>
+          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+        </div>
+
+        <div className="flex mb-8">
+          <div className="w-3/4 pr-8">
+            <h2 className="text-2xl font-bold mb-4">INSTALACIÓN DE PM2</h2>
+            <p className="text-gray-700 mb-4">
+              Para instalar pm2 en Ubuntu Server se debe estar iniciado como super
+              usuario o usuario root. Ejecutando la siguiente entrada en la consola
+              <span className="font-bold">sudo npm install pm2@latest -g</span>. Y deberá esperar hasta que finalice la
+              descarga.
+            </p>
+            <p className="text-gray-700">
+              Para comprobar la instalación del programa se ejecuta la siguiente
+              entrada <span className="font-bold">pm2 -v</span> y si todo ha salido bien deberá mostrar la siguiente
+              salida. Lo cual sería en el entorno principal de pm2 en Linux.
+            </p>
+          </div>
+          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+        </div>
       </div>
-      <div className="">
-        <h2> INSTALACION DE MySQL</h2>
-        <p>
-          Para instalar MySQL en Ubuntu Server se debe estar iniciado como super
-          usuario o usuario root. Ejecutando la siguiente entrada en la consola
-          sudo apt-get install mysql-server. Y deberá esperar hasta que finalice
-          la descarga.
-        </p>
-        {/* aqui una img */}
-        <p>
-          Una vez finalice la descarga se debe proceder a instalar el paquete ya
-          que MySQL necesita de unas configuraciones adicionales. Para iniciar
-          la configuración se ejecuta la siguiente entrada sudo
-          mysql_secure_installation
-        </p>
-        {/* aqui una img */}
-        <p>
-          Para comprobar la instalación del programa se ejecuta la siguiente
-          entrada mysql -u root y si todo ha salido bien deberá mostrar la
-          siguiente salida. Lo cual sería en entorno principal de MySQL en
-          Linux.
-        </p>
-        {/* aqui una img */}
+
+
+      <div>
+        <div className="flex mb-8">
+          <div className="w-3/4 pr-8">
+            <h2 className="text-2xl font-bold mb-4">INSTALACION DE APACHE</h2>
+            <p className="text-gray-700 mb-4">
+              Para instalar Apache en Ubuntu Server se debe estar iniciado como super
+              usuario o usuario root. Ejecutando la siguiente entrada en la consola
+              <span className="font-bold">sudo apt install apache2</span>. Y deberá esperar hasta que finalice la
+              descarga.
+            </p>
+            <p className="text-gray-700 mb-4">
+              Una vez descargado e instalado se debe proceder a iniciar el servicio
+              con la siguiente entrada <span className="font-bold">sudo service apache2 start</span>. Si todo ha salido
+              bien al iniciar el servicio se ejecuta <span className="font-bold">sudo service apache2 status</span> y
+              mostrará el estado de Apache.
+            </p>
+            <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0">
+              {/* Aquí va otra imagen relacionada con Apache */}
+            </div>
+          </div>
+        </div>
+
+        <div className="flex mb-8">
+          <div className="w-3/4 pr-8">
+            <h2 className="text-2xl font-bold mb-4">INSTALACION DE PHP</h2>
+            <p className="text-gray-700 mb-4">
+              Para instalar PHP en Ubuntu Server se debe estar iniciado como super
+              usuario o usuario root. Ejecutando la siguiente entrada en la consola
+              <span className="font-bold">sudo apt-get install php8.1</span> y se instalará la versión 8.1 en este
+              caso. Y deberá esperar hasta que finalice la descarga.
+            </p>
+            <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0">
+              {/* Aquí va la imagen relacionada con PHP */}
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="">
-        {" "}
-        INSTALACION DE PM2
-        <p>
-          Para instalar pm2 en Ubuntu Server se debe estar iniciado como super
-          usuario o usuario root. Ejecutando la siguiente entrada en la consola
-          sudo npm install pm2@latest -g. Y deberá esperar hasta que finalice la
-          descarga
-        </p>
-        {/* img aqui */}
-        <p>
-          Para comprobar la instalación del programa se ejecuta la siguiente
-          entrada pm2 -v y si todo ha salido bien deberá mostrar la siguiente
-          salida. Lo cual sería en entorno principal de pm2 en Linux
-        </p>
-        {/* img */}
-      </div>
-      <div className="">
-        <h2> INSTALACION DE APACHE</h2>
-        <p>
-          Para instalar pm2 en Ubuntu Server se debe estar iniciado como super
-          usuario o usuario root. Ejecutando la siguiente entrada en la consola
-          sudo apt install apache2. Y deberá esperar hasta que finalice la
-          descarga.
-        </p>
-        {/* img */}
-        <p>
-          Una vez descargado e instalado se debe proceder a iniciar el servicio
-          con la siguiente entrada sudo service apache2 start. Si todo ha salido
-          bien al iniciar el servicio se ejecuta sudo service apache2 status y
-          mostrará el estado de apache.
-        </p>
-        {/* img */}
-      </div>
-      <div className="">
-        <h2>INSTALACION DE PHP</h2>
-        <p>
-          Para instalar PHP en Ubuntu Server se debe estar iniciado como super
-          usuario o usuario root. Ejecutando la siguiente entrada en la consola
-          sudo apt-get install php8.1 y se instalará la versión 8.1 en este
-          caso. Y deberá esperar hasta que finalice la descarga.
-        </p>
-        {/* img */}
-      </div>
-      <div className="">
-        <h2>PROTOCOLO SSH</h2>
-        <p>
-          Es la solución para garantizar conexiones remotas seguras. SSH es un
-          protocolo de comunicación que encripta los datos que se intercambian,
-          y es virtualmente imposible romper la privacidad de la comunicación.
-          El acrónimo ssh viene del inglés: Secure SHell. El protocolo ssh es
-          muy versátil, tiene un software cliente que posibilita el acceso a la
-          línea de comandos, permite la transferencia de archivos y la creación
-          de túneles seguros con soporte de comunicación para otros protocolos
-        </p>
-      </div>
-      <div className="">
-        <h2>Clientes SSH</h2>
-        <p>Los clientes ssh se dividen en dos grupos:</p>
-        <p>
-          Terminal SSH Es un emulador de terminal que permite acceder de forma
-          remota desde un equipo a la línea de comandos del equipo remoto,
-          utilizando el protocolo SSH. Cliente SFTP Se trata de un cliente para
-          transferencia de archivos que utiliza el Protocolo de Transferencia
-          Segura de Archivos. Sus siglas significan en inglés (Secure File
-          Transfer Protocol (SFTP))
-        </p>
-      </div>
-      <div className="">
-        <h2>Clientes Linux</h2>
-        <p>
-          <span>openssh-client</span> : este software ofrece utilidades para
-          acceso remoto (cliente ssh), copia de seguridad de archivos (scp) y
-          transferencia segura de archivos (sftp), entre otras.
-        </p>
-        <p>
-          <span>FileZilla</span> : Cliente SFTP.{" "}
-        </p>
-        <h2>Clientes Windows</h2>
-        <p>
-          <span>PuTTY</span> : Terminal SSH.
-        </p>
-        <p>
-          <span>FileZilla</span> : Cliente SFTP
-        </p>
-      </div>
-      <div className="">
-        <h2>INSTALACIÓN</h2>
-        <p>root@server:~# apt install openssh-server openssh-client</p>
-        <p>
-          Una vez se haya instalado se activa el servicio con el siguiente
-          comando.
-          <span>sudo systemctl enable - -now ssh</span>
-        </p>
-        <p>
-          Para comprobar de que esté activo se ejecuta el siguiente comando.
-          <span>sudo systemctl status ssh</span>
-        </p>
-        <p>
-          Ahora se debe verificar que el servidor sea accesible, se puede hacer
-          un ping con la dirección ip del servidor desde el equipo cliente, que
-          en este caso será un equipo con Windows. Se debe ir a la consola de
-          Windows y ejecutar:
-        </p>
-        {/* img */}
-        <p>
-          Si todo va bien se puede proceder a ingresar al servidor por medio del
-          cliente FileZilla. Donde se deberá ingresar la IP del servidor, el
-          nombre de usuario del servidor, la contraseña de acceso al mismo y el
-          puerto del servidor.
-        </p>
-        {/* img */}
-        <p>
-          Una vez el servidor esté configurado ya se puede transferir la
-          aplicación al servidor. Para ello se usará el cliente FileZilla.
-        </p>
-        <p>
-          {" "}
-          - Primero se busca la aplicación en el equipo cliente desde FileZilla
-          y se copea.
-        </p>
-        {/* img */}
-        <p>
-          {" "}
-          Se pega en la carpeta remota del servidor en la ruta que en este
-          ejemplo es:{" "}
-        </p>
-        <span> {/* aqui la ruta de la carpeta */} </span>
-        {/* img */}
-        <p>
-          {" "}
-          - Se debe hacer lo mismo con la base de datos para luego importarla en
-          MySQL.
-        </p>
-        {/* img */}
-      </div>
+        <div className="flex mb-8">
+          <div className="w-3/4 pr-8">
+            <h2 className="text-2xl font-bold mb-4">PROTOCOLO SSH</h2>
+            <p className="text-gray-700">
+              Es la solución para garantizar conexiones remotas seguras. SSH es un
+              protocolo de comunicación que encripta los datos que se intercambian,
+              y es virtualmente imposible romper la privacidad de la comunicación.
+              El acrónimo SSH viene del inglés: Secure SHell. El protocolo SSH es
+              muy versátil, tiene un software cliente que posibilita el acceso a la
+              línea de comandos, permite la transferencia de archivos y la creación
+              de túneles seguros con soporte de comunicación para otros protocolos.
+            </p>
+            <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0">
+  {/* Add content or image related to Apache, PHP, or SSH */}fasdasdas
+        </div>
+
+          </div>
+        </div>
+
+        <div className="flex mb-8">
+            <div className="w-3/4 pr-8">
+              <h2 className="text-2xl font-bold mb-4">Clientes SSH</h2>
+              <p className="text-gray-700">Los clientes SSH se dividen en dos grupos:</p>
+              <p className="text-gray-700">
+                Terminal SSH: Es un emulador de terminal que permite acceder de forma
+                remota desde un equipo a la línea de comandos del equipo remoto,
+                utilizando el protocolo SSH. Cliente SFTP: Se trata de un cliente para
+                transferencia de archivos que utiliza el Protocolo de Transferencia
+                Segura de Archivos. Sus siglas significan en inglés (Secure File
+                Transfer Protocol (SFTP)).
+              </p>
+              <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0">
+  {/* Add content or image related to Apache, PHP, or SSH */}
+</div>
+
+            </div>
+          </div>
+
+
+
+        <div className="bg-gray-100">
+          <h1 className="text-4xl font-bold mb-8">Guía de Configuración del Servidor</h1>
+
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold">Clientes Linux</h2>
+            <p>
+              <span className="font-bold">openssh-client</span>: Este software ofrece utilidades para acceso remoto (cliente SSH), copia de seguridad de archivos (SCP) y transferencia segura de archivos (SFTP), entre otras.
+            </p>
+            <p>
+              <span className="font-bold">FileZilla</span>: Cliente SFTP.
+            </p>
+          </div>
+
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold">Clientes Windows</h2>
+            <p>
+              <span className="font-bold">PuTTY</span>: Terminal SSH.
+            </p>
+            <p>
+              <span className="font-bold">FileZilla</span>: Cliente SFTP.
+            </p>
+          </div>
+
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold">INSTALACIÓN</h2>
+            <p className="mb-4">root@server:~# apt install openssh-server openssh-client</p>
+            <p>
+              Una vez instalado, activa el servicio con el siguiente comando:
+              <span className="font-bold">sudo systemctl enable --now ssh</span>
+            </p>
+            <p>
+              Para comprobar que esté activo, ejecuta el siguiente comando:
+              <span className="font-bold">sudo systemctl status ssh</span>
+            </p>
+            <p>
+              Ahora, verifica que el servidor sea accesible; se puede hacer un ping con la dirección IP del servidor desde el equipo cliente, que en este caso será un equipo con Windows. Se debe ir a la consola de Windows y ejecutar:
+            </p>
+            {/* img */}
+            <p>
+              Si todo va bien, puedes ingresar al servidor usando el cliente FileZilla. Ingresa la IP del servidor, el nombre de usuario, la contraseña de acceso y el puerto del servidor.
+            </p>
+            {/* img */}
+            <p>
+              Una vez configurado el servidor, puedes transferir la aplicación usando el cliente FileZilla.
+            </p>
+            <p>
+              - Busca la aplicación en el equipo cliente desde FileZilla y cópiala.
+            </p>
+            {/* img */}
+            <p>
+              - Luego, pégala en la carpeta remota del servidor en la ruta que, en este ejemplo, es:
+              <span className="font-bold"> {/* aquí la ruta de la carpeta */} </span>
+            </p>
+            {/* img */}
+            <p>
+              - Realiza el mismo proceso con la base de datos para luego importarla en MySQL.
+            </p>
+            {/* img */}
+            {/* ¡Felicidades! Has completado la configuración del servidor y la transferencia de la aplicación. Ahora tu servidor está listo para operar. ¡Bienvenido a bordo! */}
+          </div>
+        </div>
+
+
 
     </div>
     </div>
