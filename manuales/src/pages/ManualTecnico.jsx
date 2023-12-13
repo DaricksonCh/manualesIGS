@@ -1,4 +1,14 @@
 import React from "react";
+import Node from "../../img/node.png";
+import Mysql from "../../img/mysql.png";
+import Npm from "../../img/npm.png";
+import Apache from "../../img/apache.png";
+import NodeInstall from "../../img/nodeIntall.png";
+import npmInstall from "../../img/npmIntall.png";
+import MysqlInstall from "../../img/mysql2.png";
+import Pm2Install from "../../img/pm2.png";
+import ApacheInstall from "../../img/apcheIntall.png";
+import PhpInstall from "../../img/phpinstall.png";
 
 const ManualTecnico = () => {
   return (
@@ -178,6 +188,55 @@ const ManualTecnico = () => {
       </div>
 
       <div>
+          <div className="flex mb-8">
+            <div className="w-3/4 pr-8">
+              <h2 className="text-2xl font-bold mb-4">
+                INSTALACIÓN DE Node.JS
+              </h2>
+              <p className="text-gray-700 mb-4">
+                Para instalar <span className="font-bold">NodeJS</span>en Ubuntu
+                Server se debe estar iniciado como super usuario o usuario root.
+                <span className="font-bold">
+                  a sudo apt-get install nodejs{" "}
+                </span>
+                . Y deberá esperar hasta que finalice la descarga.
+              </p>
+              <p className="text-gray-700 mb-4">
+                Ahora puede comprobar que la instalación haya resultado con
+                éxito ejecutando la siguiente entrada{" "}
+                <span className="font-bold">npm -v</span>
+              </p>
+            </div>
+            <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+          </div>
+
+          <div className="flex mb-8">
+            <div className="w-3/4 pr-8">
+              <h2 className="text-2xl font-bold mb-4">
+                INSTALACIÓN DE npm (Node Package Manager)
+              </h2>
+              <p className="text-gray-700 mb-4">
+                PPara instalar npm en Ubuntu Server se debe estar iniciado como
+                super usuario o usuario root. Ejecutando la siguiente entrada en
+                la consola
+                <span className="font-bold">sudo apt-get install npm.</span>. Y
+                deberá esperar hasta que finalice la descarga.
+              </p>
+              <p className="text-gray-700">
+                Para comprobar la instalación del programa se ejecuta la
+                siguiente entrada <span className="font-bold">npm -v</span> y si
+                todo ha salido bien deberá mostrar la siguiente salida. Lo cual
+                sería en el entorno principal versión 8.5.1 de npm.
+              </p>
+            </div>
+            <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+          </div>
+        </div>
+
+
+
+
+      <div>
         <div className="flex mb-8">
           <div className="w-3/4 pr-8">
             <h2 className="text-2xl font-bold mb-4">INSTALACIÓN DE MySQL</h2>
@@ -278,7 +337,7 @@ const ManualTecnico = () => {
               de túneles seguros con soporte de comunicación para otros protocolos.
             </p>
           </div>
-          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+          {/* <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div> */}
         </div>
 
         <div className="flex mb-8">
@@ -293,7 +352,7 @@ const ManualTecnico = () => {
                 Transfer Protocol (SFTP)).
             </p>
           </div>
-          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+          {/* <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div> */}
         </div>
       </div>
 
