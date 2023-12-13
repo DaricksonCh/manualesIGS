@@ -327,6 +327,7 @@ const ManualTecnico = () => {
               Una vez instalado, activa el servicio con el siguiente comando:
               <span className="font-bold">sudo systemctl enable --now ssh</span>
             </p>
+            
             <p>
               Para comprobar que esté activo, ejecuta el siguiente comando:
               <span className="font-bold">sudo systemctl status ssh</span>
