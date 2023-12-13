@@ -223,51 +223,6 @@ const ManualTecnico = () => {
       <div>
         <div className="flex mb-8">
           <div className="w-3/4 pr-8">
-            <h2 className="text-2xl font-bold mb-4">INSTALACIÓN DE MySQL</h2>
-            <p className="text-gray-700 mb-4">
-              Para instalar <span className="font-bold">MySQL</span> en Ubuntu Server se debe estar iniciado como super
-              usuario o usuario root. Ejecutando la siguiente entrada en la consola
-              <span className="font-bold">sudo apt-get install mysql-server</span>. Y deberá esperar hasta que finalice
-              la descarga.
-            </p>
-            <p className="text-gray-700 mb-4">
-              Una vez finalice la descarga se debe proceder a instalar el paquete ya
-              que MySQL necesita de unas configuraciones adicionales. Para iniciar
-              la configuración se ejecuta la siguiente entrada <span className="font-bold">sudo mysql_secure_installation</span>
-            </p>
-            <p className="text-gray-700">
-              Para comprobar la instalación del programa se ejecuta la siguiente
-              entrada <span className="font-bold">mysql -u root</span> y si todo ha salido bien deberá mostrar la
-              siguiente salida. Lo cual sería en el entorno principal de MySQL en
-              Linux.
-            </p>
-          </div>
-          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
-        </div>
-
-        <div className="flex mb-8">
-          <div className="w-3/4 pr-8">
-            <h2 className="text-2xl font-bold mb-4">INSTALACIÓN DE PM2</h2>
-            <p className="text-gray-700 mb-4">
-              Para instalar pm2 en Ubuntu Server se debe estar iniciado como super
-              usuario o usuario root. Ejecutando la siguiente entrada en la consola
-              <span className="font-bold">sudo npm install pm2@latest -g</span>. Y deberá esperar hasta que finalice la
-              descarga.
-            </p>
-            <p className="text-gray-700">
-              Para comprobar la instalación del programa se ejecuta la siguiente
-              entrada <span className="font-bold">pm2 -v</span> y si todo ha salido bien deberá mostrar la siguiente
-              salida. Lo cual sería en el entorno principal de pm2 en Linux.
-            </p>
-          </div>
-          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
-        </div>
-      </div>
-
-
-      <div>
-        <div className="flex mb-8">
-          <div className="w-3/4 pr-8">
             <h2 className="text-2xl font-bold mb-4">INSTALACION DE APACHE</h2>
             <p className="text-gray-700 mb-4">
               Para instalar Apache en Ubuntu Server se debe estar iniciado como super
@@ -276,17 +231,19 @@ const ManualTecnico = () => {
               descarga.
             </p>
             <p className="text-gray-700 mb-4">
+              Una vez finalice la descarga se debe proceder a instalar el paquete ya
+              que MySQL necesita de unas configuraciones adicionales. Para iniciar
+              la configuración se ejecuta la siguiente entrada <span className="font-bold">sudo mysql_secure_installation</span>
+            </p>
+            <p className="text-gray-700">
               Una vez descargado e instalado se debe proceder a iniciar el servicio
               con la siguiente entrada <span className="font-bold">sudo service apache2 start</span>. Si todo ha salido
               bien al iniciar el servicio se ejecuta <span className="font-bold">sudo service apache2 status</span> y
               mostrará el estado de Apache.
             </p>
-            <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0">
-              {/* Aquí va otra imagen relacionada con Apache */}
-            </div>
           </div>
+          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
         </div>
-
         <div className="flex mb-8">
           <div className="w-3/4 pr-8">
             <h2 className="text-2xl font-bold mb-4">INSTALACION DE PHP</h2>
@@ -296,16 +253,22 @@ const ManualTecnico = () => {
               <span className="font-bold">sudo apt-get install php8.1</span> y se instalará la versión 8.1 en este
               caso. Y deberá esperar hasta que finalice la descarga.
             </p>
-            <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0">
-              {/* Aquí va la imagen relacionada con PHP */}
-            </div>
           </div>
+          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
         </div>
       </div>
+
+      <div>
         <div className="flex mb-8">
           <div className="w-3/4 pr-8">
             <h2 className="text-2xl font-bold mb-4">PROTOCOLO SSH</h2>
-            <p className="text-gray-700">
+            <p className="text-gray-700 mb-4">
+              Para instalar Apache en Ubuntu Server se debe estar iniciado como super
+              usuario o usuario root. Ejecutando la siguiente entrada en la consola
+              <span className="font-bold">sudo apt install apache2</span>. Y deberá esperar hasta que finalice la
+              descarga.
+            </p>
+            <p className="text-gray-700 mb-4">
               Es la solución para garantizar conexiones remotas seguras. SSH es un
               protocolo de comunicación que encripta los datos que se intercambian,
               y es virtualmente imposible romper la privacidad de la comunicación.
@@ -314,33 +277,25 @@ const ManualTecnico = () => {
               línea de comandos, permite la transferencia de archivos y la creación
               de túneles seguros con soporte de comunicación para otros protocolos.
             </p>
-            <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0">
-  {/* Add content or image related to Apache, PHP, or SSH */}fasdasdas
-        </div>
-
           </div>
+          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
         </div>
 
         <div className="flex mb-8">
-            <div className="w-3/4 pr-8">
-              <h2 className="text-2xl font-bold mb-4">Clientes SSH</h2>
-              <p className="text-gray-700">Los clientes SSH se dividen en dos grupos:</p>
-              <p className="text-gray-700">
-                Terminal SSH: Es un emulador de terminal que permite acceder de forma
+          <div className="w-3/4 pr-8">
+            <h2 className="text-2xl font-bold mb-4">Clientes SSH</h2>
+            <p className="text-gray-700 mb-4">
+              Terminal SSH: Es un emulador de terminal que permite acceder de forma
                 remota desde un equipo a la línea de comandos del equipo remoto,
                 utilizando el protocolo SSH. Cliente SFTP: Se trata de un cliente para
                 transferencia de archivos que utiliza el Protocolo de Transferencia
                 Segura de Archivos. Sus siglas significan en inglés (Secure File
                 Transfer Protocol (SFTP)).
-              </p>
-              <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0">
-  {/* Add content or image related to Apache, PHP, or SSH */}
-</div>
-
-            </div>
+            </p>
           </div>
-
-
+          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+        </div>
+      </div>
 
         <div className="bg-gray-100">
           <h1 className="text-4xl font-bold mb-8">Guía de Configuración del Servidor</h1>
@@ -372,6 +327,7 @@ const ManualTecnico = () => {
               Una vez instalado, activa el servicio con el siguiente comando:
               <span className="font-bold">sudo systemctl enable --now ssh</span>
             </p>
+            
             <p>
               Para comprobar que esté activo, ejecuta el siguiente comando:
               <span className="font-bold">sudo systemctl status ssh</span>
