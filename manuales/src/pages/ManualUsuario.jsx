@@ -1,4 +1,19 @@
 import React from "react";
+import img1 from "../../public/url.png"
+import img2 from "../../public/index.png"
+import img3 from "../../public/logIn.png"
+// import img4 from "../../public/url.png"
+import img5 from "../../public/editar.png"
+// import img6 from "../../public/url.png"
+import img7 from "../../public/menu.png"
+import img8 from "../../public/menuDesplegado.png"
+import img9 from "../../public/tabla.png"
+import img10 from "../../public/nuevo.png"
+import img11 from "../../public/exito.png"
+import img12 from "../../public/fallo.png"
+import img13 from "../../public/buscar.png"
+import img14 from "../../public/editar.png"
+import img15 from "../../public/confirmacion.png"
 
 const ManualUsuario = () => {
   return (
@@ -38,7 +53,7 @@ const ManualUsuario = () => {
           URL: <span className="font-bold">{/* URL de IGS */}</span>.
         </div>
 
-        <img src="../../url.png" alt="img-Url" width="300" height="500" />
+        <img src={img1} alt="img-Url" />
 
 
         <div className="mb-4">
@@ -46,7 +61,7 @@ const ManualUsuario = () => {
           constituye la pantalla principal en la página de entrada de la
           aplicación IGS (Inventario Gastronómico SENA).
         </div>
-        {/* img index.html */}
+        <img src={img2} alt="img-index" />
         <div className="mb-4">
           Dentro del proyecto formativo IGS (Inventario Gastronómico SENA): Tras
           cargar la página de inicio de la aplicación IGS, se procederá al
@@ -55,26 +70,28 @@ const ManualUsuario = () => {
           defecto, tanto el número de identificación como la contraseña serán el
           mismo y corresponderán al número de documento de la persona.
         </div>
-        {/* img login.png */}
+        <img src={img3} alt="login" />
         <div className="mb-4">
           Dentro del proyecto formativo IGS (Inventario Gastronómico SENA): Una
           vez el usuario sea validado, será dirigido automáticamente a la página
           principal de IGS.
         </div>
-        {/* img home.png */}
+        {/* <img src={img4} alt="home" /> */}
+
         <div className="mb-4">
           <h3 className="font-bold">Administración de datos: </h3> Los usuarios
           tienen la capacidad de actualizar su información personal en la
           aplicación a través de la opción correspondiente ubicada junto al
           nombre del usuario.
         </div>
-        {/* img user-data.png */}
+        <img src={img5} alt="img-menu-config" />
+
         <div className="mb-4">
           En esta interfaz, los usuarios tienen la posibilidad de actualizar
           diversos datos personales, tales como el nombre, dirección de correo,
           y, de manera crucial, la contraseña de acceso a la aplicación.
         </div>
-        {/* img update-user.png */}
+        {/* <img src={img6} alt="Update-info-user" /> */}
       </div>
       <div className="mb-8">
         <h2 className="text-2xl font-bold">Control del Aplicativo</h2>
@@ -83,14 +100,15 @@ const ManualUsuario = () => {
           facilitar el acceso y control del usuario al momento de usar el
           aplicativo.
         </div>
-        {/* img */}
+        <img src={img7} alt="menu" />
         <div className="mb-4">
           Es de importancia destacar que el usuario podrá minimizar y/o encoger
           el menú dando clic en el ícono representado como tres líneas
           horizontales.
         </div>
-        {/* img */}
-        {/* img */}
+        <img src={img8} alt="login" />
+        <img src={img7} alt="login" />
+
       </div>
       <div className="mb-8">
         <h2 className="text-2xl font-bold">
@@ -106,7 +124,7 @@ const ManualUsuario = () => {
           o editar la información de un determinado objeto, según la necesidad
           del usuario.
         </div>
-        {/* img */}
+        <img src={img9} alt="tabla-proveedores" />
         <h3 className="mb-2">En la parte superior de la tabla se encontrará:</h3>
         <div className="mb-4">
           A la derecha, un botón que podrá ser utilizado para realizar nuevos
@@ -114,20 +132,22 @@ const ManualUsuario = () => {
           el usuario podrá diligenciar los datos requeridos para realizar el
           registro.
         </div>
-        {/* img */}
+        <img src={img10} alt="img-new-object" />
+
         <div className="mb-4">
           Para que el registro sea exitoso, el usuario tendrá que hacer clic en
           un botón de confirmación. Después de eso, verá un mensaje ya sea de
           satisfacción o de fallo, según corresponda a la solicitud del cliente.
         </div>
-        {/* img */}
+        <img src={img11} alt="img-new-object" />
+        <img src={img12} alt="img-new-object" />
         <div className="mb-4">
           A la izquierda, una sección donde el usuario podrá buscar productos
           previamente registrados. Para esta búsqueda, es necesario el nombre
           del producto que desea ver. Esta acción actualizará la tabla donde
           solo se mostrará información que coincida con la búsqueda.
         </div>
-        {/* img */}
+        <img src={img13} alt="img-new-object" />
         <h3 className="mb-2">Botones Eliminar y Editar</h3>
         <div className="mb-4">
           Estos botones se encontrarán a lo largo de la tabla que lista la
@@ -135,20 +155,22 @@ const ManualUsuario = () => {
           eliminar, se le pedirá que confirme la acción por medio de una alerta
           que se desplegará en la pantalla.
         </div>
-        {/* img delete */}
+        <img src={img15} alt="img-new-object" />
         <div className="mb-4">
           Si el usuario selecciona editar, se desplegará un modal muy similar al
           de registro, pero en este caso, contendrá la información que se
           relaciona al elemento seleccionado.
         </div>
-        {/* img */}
+
+        <img src={img14} alt="img-new-object" />
         <div className="mb-4">
           Para que la actualización sea exitosa, el usuario tendrá que hacer
           clic en un botón de confirmación. Después de eso, verá un mensaje ya
           sea de satisfacción o de fallo, según corresponda a la solicitud del
           cliente.
         </div>
-        {/* img */}
+        <img src={img11} alt="img-new-object" />
+        <img src={img12} alt="img-new-object" />
       </div>
     </div>
   );
