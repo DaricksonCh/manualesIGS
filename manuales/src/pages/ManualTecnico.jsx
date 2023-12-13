@@ -120,7 +120,7 @@ const ManualTecnico = () => {
               tienes que preocuparte con el bloqueo de procesos, pues no hay bloqueos.
             </p>
           </div>
-          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+            <img className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0" src={Node} alt="" />
         </div>
 
         <div className="flex mb-4">
@@ -134,7 +134,7 @@ const ManualTecnico = () => {
               la durabilidad.
             </p>
           </div>
-          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+          <img className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0" src={Mysql} alt="" />
         </div>
 
         <div className="flex mb-4 h-64">
@@ -146,7 +146,7 @@ const ManualTecnico = () => {
               License 2.0.
             </p>
           </div>
-          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+          <img className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0" src={Npm} alt="" />
         </div>
 
         <div className="flex">
@@ -163,7 +163,7 @@ const ManualTecnico = () => {
               adaptable a diferentes necesidades.
             </p>
           </div>
-          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+          <img className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0" src={Apache} alt="" />
         </div>
       </div>
 
@@ -189,7 +189,7 @@ const ManualTecnico = () => {
 
       <div>
           <div className="flex mb-8">
-            <div className="w-3/4 pr-8">
+            <div className="w-2/4 pr-8">
               <h2 className="text-2xl font-bold mb-4">
                 INSTALACIÓN DE Node.JS
               </h2>
@@ -207,11 +207,11 @@ const ManualTecnico = () => {
                 <span className="font-bold">npm -v</span>
               </p>
             </div>
-            <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+            <img className="w-2/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0" src={NodeInstall} alt="" />
           </div>
 
           <div className="flex mb-8">
-            <div className="w-3/4 pr-8">
+            <div className="w-2/4 pr-8">
               <h2 className="text-2xl font-bold mb-4">
                 INSTALACIÓN DE npm (Node Package Manager)
               </h2>
@@ -229,7 +229,7 @@ const ManualTecnico = () => {
                 sería en el entorno principal versión 8.5.1 de npm.
               </p>
             </div>
-            <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+            <img className="w-2/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0" src={NodeInstall} alt="" />
           </div>
         </div>
 
@@ -238,7 +238,7 @@ const ManualTecnico = () => {
 
       <div>
         <div className="flex mb-8">
-          <div className="w-3/4 pr-8">
+          <div className="w-2/4 pr-8">
             <h2 className="text-2xl font-bold mb-4">INSTALACIÓN DE MySQL</h2>
             <p className="text-gray-700 mb-4">
               Para instalar <span className="font-bold">MySQL</span> en Ubuntu Server se debe estar iniciado como super
@@ -258,11 +258,11 @@ const ManualTecnico = () => {
               Linux.
             </p>
           </div>
-          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+          <img className="w-2/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0" src={MysqlInstall} alt="" />
         </div>
 
         <div className="flex mb-8">
-          <div className="w-3/4 pr-8">
+          <div className="w-2/4 pr-8">
             <h2 className="text-2xl font-bold mb-4">INSTALACIÓN DE PM2</h2>
             <p className="text-gray-700 mb-4">
               Para instalar pm2 en Ubuntu Server se debe estar iniciado como super
@@ -276,12 +276,12 @@ const ManualTecnico = () => {
               salida. Lo cual sería en el entorno principal de pm2 en Linux.
             </p>
           </div>
-          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+          <img className="w-2/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0" src={Pm2Install} alt="" />
         </div>
       </div>
       <div>
         <div className="flex mb-8">
-          <div className="w-3/4 pr-8">
+          <div className="w-2/4 pr-8">
             <h2 className="text-2xl font-bold mb-4">INSTALACION DE APACHE</h2>
             <p className="text-gray-700 mb-4">
               Para instalar Apache en Ubuntu Server se debe estar iniciado como super
@@ -301,10 +301,10 @@ const ManualTecnico = () => {
               mostrará el estado de Apache.
             </p>
           </div>
-          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+          <img className="w-2/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0" src={ApacheInstall} alt="" />
         </div>
         <div className="flex mb-8">
-          <div className="w-3/4 pr-8">
+          <div className="w-2/4 pr-8">
             <h2 className="text-2xl font-bold mb-4">INSTALACION DE PHP</h2>
             <p className="text-gray-700 mb-4">
               Para instalar PHP en Ubuntu Server se debe estar iniciado como super
@@ -313,7 +313,7 @@ const ManualTecnico = () => {
               caso. Y deberá esperar hasta que finalice la descarga.
             </p>
           </div>
-          <div className="w-1/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0"></div>
+          <img className="w-2/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0" src={PhpInstall} alt="" />
         </div>
       </div>
 
