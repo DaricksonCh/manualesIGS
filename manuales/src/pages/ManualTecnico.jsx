@@ -9,6 +9,8 @@ import MysqlInstall from "../../img/mysql2.png";
 import Pm2Install from "../../img/pm2.png";
 import ApacheInstall from "../../img/apcheIntall.png";
 import PhpInstall from "../../img/phpinstall.png";
+import Caso from "../../img/Diagrama de casos IGS.jpg";
+import entida from "../../img/merEspañol.png";
 
 const ManualTecnico = () => {
   return (
@@ -416,6 +418,15 @@ const ManualTecnico = () => {
             </p>
             {/* img */}
             {/* ¡Felicidades! Has completado la configuración del servidor y la transferencia de la aplicación. Ahora tu servidor está listo para operar. ¡Bienvenido a bordo! */}
+          </div>
+
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold">Diagrama de caso de uso </h2>
+            <img className="w-4/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0" src={Caso} alt="" />
+          </div>
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold">Modelo entidad relacion</h2>
+            <img className="w-4/4 h-auto bg-gray-300 ml-4 rounded-lg flex-shrink-0" src={entida} alt="" />
           </div>
         </div>
 
